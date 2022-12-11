@@ -1,2 +1,4 @@
-﻿  ImageMagicWrapper.cpp
+﻿  main.cpp
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\main.cpp(139,78): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\main.cpp(139,55): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   HeicToJpg.vcxproj -> D:\Egyetem\Projects\HeicToJpg\x64\Debug\HeicToJpg.exe

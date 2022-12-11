@@ -30,9 +30,9 @@ int ImageMagicWrapper::executeOnDirectory()
 				new_file_path.replace(file_path.length() - 4, 4, "jpg");
 				std::string command = "magick " + file_path + " " + new_file_path;
  
-				//system(command.c_str());
+				system(command.c_str()); // Opens cmd window, but doesn't flood the system with magick calls. 
 
-				WinExec(command.c_str(), SW_HIDE);
+				//WinExec(command.c_str(), SW_HIDE);
 
 				this->currentCount++;
 

@@ -1,0 +1,207 @@
+﻿  ImageMagicWrapper.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(23,25): error C2039: 'vector': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\thread(32): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(23,19): error C2061: syntax error: identifier 'vector'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(23,19): error C2535: 'ImageMagicWrapper::ImageMagicWrapper(void)': member function already defined or declared
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(12): message : see declaration of 'ImageMagicWrapper::ImageMagicWrapper'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(58,7): error C2039: 'vector': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\thread(32): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(58,13): error C2143: syntax error: missing ';' before '<'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(58,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(58,38): error C2238: unexpected token(s) preceding ';'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(32,9): error C2039: 'threadPool': is not a member of 'ImageMagicWrapper'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(9): message : see declaration of 'ImageMagicWrapper'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(32,22): error C2065: 'threadPool': undeclared identifier
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(14,32): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(14,44): error C2039: 'directory_iterator': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\thread(32): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(14,2): error C2530: 'entry': references must be initialized
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(14,2): error C3531: 'entry': a symbol whose type contains 'auto' must have an initializer
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(14,25): error C2143: syntax error: missing ';' before ':'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(14,2): error C3861: 'directory_iterator': identifier not found
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(14,74): error C2143: syntax error: missing ';' before ')'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(65,32): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(65,44): error C2039: 'directory_iterator': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\thread(32): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(65,2): error C2530: 'entry': references must be initialized
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(65,2): error C3531: 'entry': a symbol whose type contains 'auto' must have an initializer
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(65,25): error C2143: syntax error: missing ';' before ':'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(65,2): error C3861: 'directory_iterator': identifier not found
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(65,74): error C2143: syntax error: missing ';' before ')'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(83,12): error C2039: 'threadPool': is not a member of 'ImageMagicWrapper'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(9): message : see declaration of 'ImageMagicWrapper'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(89,8): error C2039: 'threadPool': is not a member of 'ImageMagicWrapper'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(9): message : see declaration of 'ImageMagicWrapper'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(113,32): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(113,44): error C2039: 'directory_iterator': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\thread(32): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(113,2): error C2530: 'entry': references must be initialized
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(113,2): error C3531: 'entry': a symbol whose type contains 'auto' must have an initializer
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(113,25): error C2143: syntax error: missing ';' before ':'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(113,2): error C3861: 'directory_iterator': identifier not found
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.cpp(113,68): error C2143: syntax error: missing ';' before ')'
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_dx12.cpp
+  imgui_impl_win32.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  main.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(23,25): error C2039: 'vector': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\thread(32): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(23,19): error C2061: syntax error: identifier 'vector'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(23,19): error C2535: 'ImageMagicWrapper::ImageMagicWrapper(void)': member function already defined or declared
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(12): message : see declaration of 'ImageMagicWrapper::ImageMagicWrapper'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(58,7): error C2039: 'vector': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\thread(32): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(58,13): error C2143: syntax error: missing ';' before '<'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(58,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(58,38): error C2238: unexpected token(s) preceding ';'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(32,9): error C2039: 'threadPool': is not a member of 'ImageMagicWrapper'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(9): message : see declaration of 'ImageMagicWrapper'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\ImageMagicWrapper.h(32,22): error C2065: 'threadPool': undeclared identifier
+  The contents of <string_view> are available only with C++17 or later.
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(72,32): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(72,44): error C2039: 'path': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(24): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(72,48): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(72,48): error C2143: syntax error: missing ',' before '&'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(76,20): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(76,32): error C2039: 'path': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(24): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(76,36): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(76,36): error C2143: syntax error: missing ';' before '&'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(76,61): error C2238: unexpected token(s) preceding ';'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(81,14): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(81,26): error C2039: 'path': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(24): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(81,31): error C3646: 'GetSelected': unknown override specifier
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(81,42): error C2059: syntax error: '('
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(81,50): error C2238: unexpected token(s) preceding ';'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(86,26): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(86,38): error C2039: 'path': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(24): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(86,42): error C2327: 'ImGui::FileBrowser::path': is not a type name, static, or enumerator
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(86,42): error C2065: 'path': undeclared identifier
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(86,14): error C2923: 'std::vector': 'path' is not a valid template type argument for parameter '_Ty'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(86): message : see declaration of 'path'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(86,14): error C2976: 'std::vector': too few template arguments
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(496): message : see declaration of 'std::vector'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(101,32): error C2039: 'string_view': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(24): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(101,44): error C2061: syntax error: identifier 'string_view'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(120,18): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(120,30): error C2039: 'path': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(24): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(120,35): error C3646: 'name': unknown override specifier
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(120,39): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(122,18): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(122,30): error C2039: 'path': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(24): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(122,35): error C3646: 'extension': unknown override specifier
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(122,44): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(129,41): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(129,53): error C2039: 'path': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(24): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(129,57): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(129,57): error C2143: syntax error: missing ',' before '&'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(131,44): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(131,56): error C2039: 'path': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(24): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(131,60): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(131,60): error C2143: syntax error: missing ',' before '&'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(165,14): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(165,26): error C2039: 'path': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(24): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(165,31): error C3646: 'pwd_': unknown override specifier
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(165,35): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(166,23): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(166,35): error C2039: 'path': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(24): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(166,39): error C2327: 'ImGui::FileBrowser::path': is not a type name, static, or enumerator
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(166,39): error C2065: 'path': undeclared identifier
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(166,14): error C2923: 'std::set': 'path' is not a valid template type argument for parameter '_Kty'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(166): message : see declaration of 'path'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(166,14): error C2976: 'std::set': too few template arguments
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\set(52): message : see declaration of 'std::set'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(187,1): error C2789: 'ImGui::FileBrowser::path': an object of const-qualified type must be initialized
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(76): message : see declaration of 'ImGui::FileBrowser::path'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(187,1): error C2512: 'std::set': no appropriate default constructor available
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\set(52,1): message : see declaration of 'std::set'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(197,17): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(197,29): error C2039: 'current_path': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(24): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(197,41): error C3861: 'current_path': identifier not found
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(238,5): error C2065: 'pwd_': undeclared identifier
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(238,21): error C2039: 'pwd_': is not a member of 'ImGui::FileBrowser'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(34): message : see declaration of 'ImGui::FileBrowser'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(239,53): error C2678: binary '=': no operator found which takes a left-hand operand of type 'std::set' (or there is no acceptable conversion)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\set(149,10): message : could be 'std::set<_Kty,_Pr,_Alloc> &std::set<_Kty,_Pr,_Alloc>::operator =(std::initializer_list<_Traits::value_type>)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\set(123,10): message : or       'std::set<_Kty,_Pr,_Alloc> &std::set<_Kty,_Pr,_Alloc>::operator =(std::set<_Kty,_Pr,_Alloc> &&) noexcept(<expr>)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\set(114,10): message : or       'std::set<_Kty,_Pr,_Alloc> &std::set<_Kty,_Pr,_Alloc>::operator =(const std::set<_Kty,_Pr,_Alloc> &)'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(239,53): message : while trying to match the argument list '(std::set, const std::set)'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(239,53): error C2582: 'operator =' function is unavailable in 'std::set'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(313,10): error C2514: 'ImGui::FileBrowser::ScopeGuard': class template cannot be constructed
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(107): message : see declaration of 'ImGui::FileBrowser::ScopeGuard'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(356,43): error C2514: 'ImGui::FileBrowser::ScopeGuard': class template cannot be constructed
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(107): message : see declaration of 'ImGui::FileBrowser::ScopeGuard'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(361,43): error C2065: 'pwd_': undeclared identifier
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(367,45): error C2514: 'ImGui::FileBrowser::ScopeGuard': class template cannot be constructed
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(107): message : see declaration of 'ImGui::FileBrowser::ScopeGuard'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(383,30): error C2664: 'bool ImGui::FileBrowser::SetPwd(const int)': cannot convert argument 1 from 'char [4]' to 'const int'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(383,24): message : There is no context in which this conversion is possible
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(72,14): message : see declaration of 'ImGui::FileBrowser::SetPwd'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(393,28): error C2065: 'pwd_': undeclared identifier
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(393,5): error C2530: 'sec': references must be initialized
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(393,5): error C3531: 'sec': a symbol whose type contains 'auto' must have an initializer
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(393,26): error C2143: syntax error: missing ';' before ':'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(393,32): error C2143: syntax error: missing ';' before ')'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(420,14): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(420,26): error C2039: 'path': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(24): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(420,31): error C2146: syntax error: missing ';' before identifier 'newPwd'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(420,31): error C2065: 'newPwd': undeclared identifier
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(421,32): error C2065: 'pwd_': undeclared identifier
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(421,9): error C2530: 'sec': references must be initialized
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(421,9): error C3531: 'sec': a symbol whose type contains 'auto' must have an initializer
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(421,30): error C2143: syntax error: missing ';' before ':'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(421,36): error C2143: syntax error: missing ';' before ')'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(427,13): error C2065: 'newPwd': undeclared identifier
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(433,13): error C2065: 'newPwd': undeclared identifier
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(437,16): error C2065: 'newPwd': undeclared identifier
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(446,23): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(446,35): error C2039: 'path': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(24): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(446,14): error C2974: 'std::set': invalid template argument for '_Kty', type expected
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\set(52): message : see declaration of 'std::set'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(446,14): error C2976: 'std::set': too few template arguments
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\set(52): message : see declaration of 'std::set'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(446,41): error C2133: 'newSelectedFilenames': unknown size
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(446,41): error C2512: 'std::set': no appropriate default constructor available
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\set(52,1): message : see declaration of 'std::set'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(447,27): error C2663: 'std::_Tree<_Traits>::_Unchecked_begin': 2 overloads have no legal conversion for 'this' pointer
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(447,27): error C2662: 'std::_Default_sentinel std::_Tree<_Traits>::_Unchecked_end(void) noexcept const': cannot convert 'this' pointer from 'std::set' to 'const std::set<_Kty,_Pr,_Alloc> &'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(448,9): message : Reason: cannot convert from 'std::set' to 'const std::set<_Kty,_Pr,_Alloc>'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(447,27): message : Conversion requires a second user-defined-conversion operator or constructor
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xtree(1150,23): message : see declaration of 'std::_Tree<_Traits>::_Unchecked_end'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(448,9): error C3536: '<begin>$L0': cannot be used before it is initialized
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(448,9): error C3536: '<end>$L0': cannot be used before it is initialized
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(447,45): error C2100: illegal indirection
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(453,43): error C2039: 'name': is not a member of 'ImGui::FileBrowser::FileRecord'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(117): message : see declaration of 'ImGui::FileBrowser::FileRecord'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(458,49): error C2663: 'std::_Tree<_Traits>::insert': 3 overloads have no legal conversion for 'this' pointer
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(464,62): error C2663: 'std::_Tree<_Traits>::insert': 3 overloads have no legal conversion for 'this' pointer
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(479,57): error C2514: 'ImGui::FileBrowser::ScopeGuard': class template cannot be constructed
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(107): message : see declaration of 'ImGui::FileBrowser::ScopeGuard'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(486,72): error C2514: 'ImGui::FileBrowser::ScopeGuard': class template cannot be constructed
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(107): message : see declaration of 'ImGui::FileBrowser::ScopeGuard'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(487,38): error C2065: 'pwd_': undeclared identifier
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(487,21): error C3861: 'create_directory': identifier not found
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(503,10): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(503,22): error C2039: 'path': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(24): message : see declaration of 'std'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(503,27): error C2146: syntax error: missing ';' before identifier 'newPwd'
+D:\Egyetem\Projects\HeicToJpg\HeicToJpg\imfilebrowser.h(503,33): fatal  error C1003: error count exceeds 100; stopping compilation

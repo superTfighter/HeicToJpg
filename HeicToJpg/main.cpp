@@ -1,21 +1,4 @@
 #include "ImageMagicWrapper.h"
-
-
-//int main()
-//{
-//	/*ImageMagicWrapper img;
-//
-//	img.addPath("D:/Képek/Tomi/Test");
-//
-//	img.executeOnSubDirectories();*/
-//
-//
-//
-//
-//	return 0;
-//	
-//}
-
 #include "imgui.h"
 #include "imgui_impl_win32.h"
 #include "imgui_impl_dx12.h"
@@ -67,15 +50,25 @@ void WaitForLastSubmittedFrame();
 FrameContext* WaitForNextFrameResources();
 LRESULT WINAPI WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
+
+std::vector<std::thread> threadPool;
+
 // Main code
-int main()
-//INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine, INT nCmdShow)
+//int main()
+INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine, INT nCmdShow)
 {
+
+
+    // Init threadpool
+    threadPool = std::vector<std::thread>();
+    threadPool.resize(1);
+
+
     // Create application window
     //ImGui_ImplWin32_EnableDpiAwareness();
-    WNDCLASSEXW wc = { sizeof(wc), CS_CLASSDC, WndProc, 0L, 0L, GetModuleHandle(NULL), NULL, NULL, NULL, NULL, L"ImGui Example", NULL };
+    WNDCLASSEXW wc = { sizeof(wc), CS_CLASSDC, WndProc, 0L, 0L, GetModuleHandle(NULL), NULL, NULL, NULL, NULL, L"HeicToJpg", NULL };
     ::RegisterClassExW(&wc);
-    HWND hwnd = ::CreateWindowW(wc.lpszClassName, L"Dear ImGui DirectX12 Example", WS_OVERLAPPEDWINDOW, 100, 100, 1280, 800, NULL, NULL, wc.hInstance, NULL);
+    HWND hwnd = ::CreateWindowW(wc.lpszClassName, L"HeicToJpg Converter", WS_OVERLAPPEDWINDOW, 100, 100, 1280, 800, NULL, NULL, wc.hInstance, NULL);
 
     // Initialize Direct3D
     if (!CreateDeviceD3D(hwnd))
@@ -93,47 +86,29 @@ int main()
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
     ImGuiIO& io = ImGui::GetIO(); (void)io;
-    //io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
-    //io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;      // Enable Gamepad Controls
-
-    // Setup Dear ImGui style
     ImGui::StyleColorsDark();
-    //ImGui::StyleColorsLight();
 
-    // Setup Platform/Renderer backends
     ImGui_ImplWin32_Init(hwnd);
     ImGui_ImplDX12_Init(g_pd3dDevice, NUM_FRAMES_IN_FLIGHT,
         DXGI_FORMAT_R8G8B8A8_UNORM, g_pd3dSrvDescHeap,
         g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart(),
         g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart());
 
-    // Load Fonts
-    // - If no fonts are loaded, dear imgui will use the default font. You can also load multiple fonts and use ImGui::PushFont()/PopFont() to select them.
-    // - AddFontFromFileTTF() will return the ImFont* so you can store it if you need to select the font among multiple.
-    // - If the file cannot be loaded, the function will return NULL. Please handle those errors in your application (e.g. use an assertion, or display an error and quit).
-    // - The fonts will be rasterized at a given size (w/ oversampling) and stored into a texture when calling ImFontAtlas::Build()/GetTexDataAsXXXX(), which ImGui_ImplXXXX_NewFrame below will call.
-    // - Use '#define IMGUI_ENABLE_FREETYPE' in your imconfig file to use Freetype for higher quality font rendering.
-    // - Read 'docs/FONTS.md' for more instructions and details.
-    // - Remember that in C/C++ if you want to include a backslash \ in a string literal you need to write a double backslash \\ !
-    //io.Fonts->AddFontDefault();
-    //io.Fonts->AddFontFromFileTTF("c:\\Windows\\Fonts\\segoeui.ttf", 18.0f);
-    //io.Fonts->AddFontFromFileTTF("../../misc/fonts/DroidSans.ttf", 16.0f);
-    //io.Fonts->AddFontFromFileTTF("../../misc/fonts/Roboto-Medium.ttf", 16.0f);
-    //io.Fonts->AddFontFromFileTTF("../../misc/fonts/Cousine-Regular.ttf", 15.0f);
-    //ImFont* font = io.Fonts->AddFontFromFileTTF("c:\\Windows\\Fonts\\ArialUni.ttf", 18.0f, NULL, io.Fonts->GetGlyphRangesJapanese());
-    //IM_ASSERT(font != NULL);
-
-    // Our state
-    bool show_demo_window = true;
-    bool show_another_window = false;
     ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
-
     ImGui::FileBrowser fileDialog(ImGuiFileBrowserFlags_SelectDirectory);
-    ImageMagicWrapper img;
+
+    ImageMagicWrapper a(&threadPool);
+
+    ImageMagicWrapper* img =  &a;
 
     // Main loop
     bool done = false;
+    bool executing = false;
+
+    bool show_demo_window = true;
+
+
     while (!done)
     {
         // Poll and handle messages (inputs, window resize, etc.)
@@ -154,26 +129,53 @@ int main()
         ImGui_ImplWin32_NewFrame();
         ImGui::NewFrame();
 
-        if (ImGui::Begin("Folder selector"))
+        //if (show_demo_window)
+        //    ImGui::ShowDemoWindow(&show_demo_window);
+
+        float display_width = (float)io.DisplaySize.x;
+        float display_height = (float)io.DisplaySize.y;
+
+        ImGui::SetNextWindowPos(ImVec2(0, 0));
+        ImGui::SetNextWindowSize(ImVec2(display_width * 0.99, display_height * 0.99));
+
+
+        if (ImGui::Begin("Folder selector",NULL, ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoTitleBar))
         {
             // open file dialog when user clicks this button
             if (ImGui::Button("Select a folder"))
                 fileDialog.Open();
 
 
-            if (!img.path.empty()) {
+            if (!img->path.empty() && !executing) {
 
-                ImGui::Text("Selected folder:  %s", img.path.c_str());
+                ImGui::Text("Selected folder:  %s", img->path.c_str());
 
                 if (ImGui::Button("Execute")) {
+                    img->executeOnSubDirectoriesDifferentThread();
 
-                    img.executeOnSubDirectories();
-                    
-                    //Show progress bar
-
-                    img.path = "";
+                    executing = true;
                 }
-                   
+            }
+
+            // Reseting
+            if (img->totalCount <= img->currentCount && img->totalCount != 0)
+            {
+
+                if (threadPool[0].joinable())
+                    threadPool[0].join();
+
+                img->totalCount = 0;
+                img->currentCount = 0;
+                img->path = "";
+
+                executing = false;
+
+            }
+
+            if(executing)
+            {
+                std::string text = "Total: " + std::to_string(img->totalCount) + " Current: " + std::to_string(img->currentCount);
+                ImGui::Text(text.c_str());
             }
         }
 
@@ -185,7 +187,7 @@ int main()
         {
             std::cout << "Selected filename: " << fileDialog.GetSelected().string() << std::endl;
 
-            img.addPath(fileDialog.GetSelected().string());
+            img->addPath(fileDialog.GetSelected().string());
         
             fileDialog.ClearSelected();
         }
@@ -220,8 +222,7 @@ int main()
 
         g_pd3dCommandQueue->ExecuteCommandLists(1, (ID3D12CommandList* const*)&g_pd3dCommandList);
 
-        g_pSwapChain->Present(1, 0); // Present with vsync
-        //g_pSwapChain->Present(0, 0); // Present without vsync
+        g_pSwapChain->Present(1, 0);
 
         UINT64 fenceValue = g_fenceLastSignaledValue + 1;
         g_pd3dCommandQueue->Signal(g_fence, fenceValue);
@@ -239,6 +240,17 @@ int main()
     CleanupDeviceD3D();
     ::DestroyWindow(hwnd);
     ::UnregisterClassW(wc.lpszClassName, wc.hInstance);
+
+
+    // Stop running threads
+    int i = 0;
+    for (auto it = threadPool.begin(); it != threadPool.end(); ++it)
+    {
+        if (threadPool[i].joinable())
+            threadPool[i].join();
+
+        i++;
+    }
 
     return 0;
 }
